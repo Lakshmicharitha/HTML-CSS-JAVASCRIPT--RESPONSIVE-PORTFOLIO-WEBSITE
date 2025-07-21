@@ -324,7 +324,7 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .experience-details-container {
@@ -359,7 +359,7 @@ article .icon {
 /* PROJECTS SECTION */
 
 #project {
-  position: relative;
+  position:relative;
 }
 
 .color-container {
@@ -371,21 +371,22 @@ article .icon {
   border-radius: 1rem;
   width: 100%;
   height: auto;
-  max-width: 300px; 
+  max-width: 100px; 
   object-fit: cover;
   display: block;
   margin: 0 auto;
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 2rem;
   color: black;
 }
 
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
-}
+}  
+
 
 /* CONTACT */
 
@@ -393,7 +394,8 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  padding: 1rem 0;  /* Add padding for vertical spacing */
+  height: auto;
 }
 
 .contact-info-upper-container {
@@ -403,7 +405,7 @@ article .icon {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 0.5rem;
 }
 
@@ -436,4 +438,113 @@ footer {
 
 footer p {
   text-align: center;
+}
+#certifications {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+#certifications .details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+}
+
+#certifications embed {
+  width: 100%;
+  max-height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#certifications .btn-container {
+  margin-top: 1.5rem;
+}
+
+#certifications .btn-container a {
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#certifications .btn-container a:hover {
+  background-color: #388e3c;
+}
+#certifications {
+  padding: 4rem 2rem 6rem 2rem; /* bottom padding increased */
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#projects {
+  padding: 6rem 2rem;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+#projects h1.title {
+  margin-top: 4rem;
+}
+/* Fix tool list wrapping and spacing */
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Ensure each article has consistent sizing */
+.article-container article {
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: left;
+}
+
+/* Center GitHub button and its text in Projects section */
+#projects .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* --------------------------- */
+/* PROJECTS CENTER ALIGNMENT  */
+/* --------------------------- */
+#projects .about-containers {
+  display: flex;
+  justify-content: center;
+}
+
+#projects .details-container {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin:4px;
+}
+
+#projects .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#projects h1.title {
+  margin-top: 2rem; /* reduced from 4rem */
 }
